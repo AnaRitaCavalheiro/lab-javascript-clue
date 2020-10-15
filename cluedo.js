@@ -97,7 +97,7 @@ weaponNine = {
 let roomsArray = ['Dining Room','Conservatory','Kitchen','Study','Library','Billiard Room','Lounge','Ballroom','Hall','Spa','Living Room','Observatory','Theater','Guest House', 'Patio']
 
 function SelectRandom(array) {
-    return(math.random(array))  
+   return array[Math.floor(Math.random(array) * array.length)]
 };
 
 function pickMystery() {
